@@ -10,8 +10,8 @@ const Card = ({ title }) => {
   })
 
   return (
-    <div className="card" onClick={() => { setCount((prevState) => prevState + 1) }}>
-      <h2>{title}</h2>
+    <div className="card" onClick={() => { setCount( count + 1) }}>
+      <h2>{title} - {count}</h2>
       <button onClick={() => setHasLiked(!hasLiked)}>
         {hasLiked ? "❤️" : "🤍"}
       </button>
